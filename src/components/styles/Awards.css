@@ -1,0 +1,66 @@
+.awards-section {
+  margin: 80px auto 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.awards-heading {
+  margin-bottom: 36px;
+}
+
+.awards-heading h3 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-weight: 400;
+  color: var(--accentColor);
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.awards-card {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 22px;
+}
+
+.awards-card h4 {
+  margin: 0 0 10px;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.awards-card h5 {
+  margin: 0 0 14px;
+  color: var(--accentColor);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.awards-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.awards-summary {
+  margin-bottom: 12px !important;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 900px) {
+  .awards-section {
+    margin: 50px auto 70px;
+  }
+
+  .awards-card h4 {
+    font-size: 22px;
+  }
+}
