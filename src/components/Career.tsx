@@ -52,7 +52,7 @@ const Career = () => {
                 <h4>Machine Learning Engineer Intern</h4>
                 <h5>Intrum</h5>
               </div>
-              <h3>2024</h3>
+              <h3>2026</h3>
             </div>
             <p>
               Working with Data, AI, and Automation teams to develop and support machine learning and data-driven solutions. Gaining hands-on experience with Databricks, AI workflows, automation, and applied data engineering while collaborating with experienced professionals on real-world business challenges. Contributing to data processing, model development, and automation initiatives that drive operational efficiency and innovation.
