@@ -87,6 +87,46 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
+              <h3>MACHINE LEARNING</h3>
+              <h4>Data, Models & GenAI</h4>
+              <p>
+                Building data pipelines, training predictive models, and shipping
+                RAG and LLM-powered systems from notebook to production.
+              </p>
+              <h5>Skillset & tools</h5>
+              <div className="what-content-flex">
+                <div className="what-tags">Python</div>
+                <div className="what-tags">Databricks</div>
+                <div className="what-tags">PySpark</div>
+                <div className="what-tags">XGBoost</div>
+                <div className="what-tags">LangChain</div>
+                <div className="what-tags">RAG</div>
+                <div className="what-tags">ChromaDB</div>
+                <div className="what-tags">OpenAI API</div>
+              </div>
+              <div className="what-arrow"></div>
+            </div>
+          </div>
+          <div
+            className="what-content what-noTouch"
+            ref={(el) => setRef(el, 1)}
+          >
+            <div className="what-border1">
+              <svg height="100%">
+                <line
+                  x1="0"
+                  y1="100%"
+                  x2="100%"
+                  y2="100%"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="6,6"
+                />
+              </svg>
+            </div>
+            <div className="what-corner"></div>
+
+            <div className="what-content-in">
               <h3>FRONTEND</h3>
               <h4>Building Interactive UIs</h4>
               <p>
@@ -109,7 +149,7 @@ const WhatIDo = () => {
           </div>
           <div
             className="what-content what-noTouch"
-            ref={(el) => setRef(el, 1)}
+            ref={(el) => setRef(el, 2)}
           >
             <div className="what-border1">
               <svg height="100%">
