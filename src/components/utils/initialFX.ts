@@ -13,7 +13,7 @@ export function initialFX() {
   });
 
   var landingText = new SplitText(
-    [".landing-info h3", ".landing-intro h2", ".landing-intro h1"],
+    [".landing-intro h2", ".landing-intro h1"],
     {
       type: "chars,lines",
       linesClass: "split-line",
@@ -36,8 +36,9 @@ export function initialFX() {
   let TextProps = { type: "chars,lines", linesClass: "split-h2" };
 
   var landingText2 = new SplitText(".landing-h2-info", TextProps);
+  var landingText6 = new SplitText(".landing-h3-1", TextProps);
   gsap.fromTo(
-    landingText2.chars,
+    [...landingText2.chars, ...landingText6.chars],
     { opacity: 0, y: 80, filter: "blur(5px)" },
     {
       opacity: 1,
@@ -76,11 +77,20 @@ export function initialFX() {
   var landingText4 = new SplitText(".landing-h2-1", TextProps);
   var landingText5 = new SplitText(".landing-h2-2", TextProps);
 
+  var landingText7 = new SplitText(".landing-h3-2", TextProps);
+
   LoopText(landingText2, landingText3);
   LoopText(landingText4, landingText5);
+  // Spread over the same total time as a 9-letter word so the longer
+  // "Machine Learning" flips in sync with the words below it
+  LoopText(landingText6, landingText7, { amount: 0.8 });
 }
 
-function LoopText(Text1: SplitText, Text2: SplitText) {
+function LoopText(
+  Text1: SplitText,
+  Text2: SplitText,
+  stagger: gsap.NumberValue | gsap.StaggerVars = 0.1
+) {
   var tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
   const delay = 4;
   const delay2 = delay * 2 + 1;
@@ -93,7 +103,7 @@ function LoopText(Text1: SplitText, Text2: SplitText) {
       duration: 1.2,
       ease: "power3.inOut",
       y: 0,
-      stagger: 0.1,
+      stagger,
       delay: delay,
     },
     0
@@ -105,7 +115,7 @@ function LoopText(Text1: SplitText, Text2: SplitText) {
         duration: 1.2,
         ease: "power3.inOut",
         y: 0,
-        stagger: 0.1,
+        stagger,
         delay: delay2,
       },
       1
@@ -117,7 +127,7 @@ function LoopText(Text1: SplitText, Text2: SplitText) {
         y: -80,
         duration: 1.2,
         ease: "power3.inOut",
-        stagger: 0.1,
+        stagger,
         delay: delay,
       },
       0
@@ -128,7 +138,7 @@ function LoopText(Text1: SplitText, Text2: SplitText) {
         y: -80,
         duration: 1.2,
         ease: "power3.inOut",
-        stagger: 0.1,
+        stagger,
         delay: delay2,
       },
       1

@@ -211,6 +211,13 @@
   font-weight: 300;
   color: var(--accentColor);
   margin: 0;
+  position: relative;
+}
+
+.landing-h3-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .landing-info h2 {
