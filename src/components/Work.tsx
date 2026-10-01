@@ -12,6 +12,13 @@ const projects = [
     link: "https://github.com/isakibul15/Enterprise-Scale-RAG-GenAI-Knowledge-Base",
   },
   {
+    title: "Sleep Debt & Screen Time",
+    category: "Databricks Hackathon / Data & ML",
+    tools: "Databricks, PySpark, Medallion Pipeline, XGBoost, AI/BI Dashboard, Genie",
+    image: "/images/databricks-hackathon.jpg",
+    link: "https://github.com/isakibul15/Databricks_Hackathon",
+  },
+  {
     title: "ExpoSure Safety Analytics",
     category: "AI Workplace Exposure Analytics",
     tools: "React, Vite, Couchbase Capella, RAG Pipeline, IoT Data",
