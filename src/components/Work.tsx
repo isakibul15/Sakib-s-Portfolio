@@ -5,34 +5,32 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
-    image: "/images/Solidx.png",
+    title: "Enterprise RAG Knowledge Base",
+    category: "GenAI / Retrieval-Augmented Generation",
+    tools: "Python, FastAPI, LangChain, ChromaDB, Docker",
+    image: "/images/rag.jpg",
+    link: "https://github.com/isakibul15/Enterprise-Scale-RAG-GenAI-Knowledge-Base",
   },
   {
-    title: "Radix",
-    category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
-    image: "/images/radix.png",
+    title: "ExpoSure Safety Analytics",
+    category: "AI Workplace Exposure Analytics",
+    tools: "React, Vite, Couchbase Capella, RAG Pipeline, IoT Data",
+    image: "/images/exposure.jpg",
+    link: "https://github.com/isakibul15/ai-exposure-safety-analytics-poc",
   },
   {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
+    title: "ParkSverige",
+    category: "Smart Parking Platform",
+    tools: "Next.js, Expo, NestJS, Databricks, PostgreSQL + PostGIS",
+    image: "/images/parksverige.jpg",
+    link: "https://github.com/isakibul15/ParkSverige",
   },
   {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
-  },
-  {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
+    title: "AI Code Assistant",
+    category: "LLM Developer Tool",
+    tools: "Next.js, Express.js, OpenAI API, GitHub OAuth",
+    image: "/images/ai-code-assistant.jpg",
+    link: "https://ai-code-assistant-eight.vercel.app",
   },
 ];
 
@@ -115,7 +113,11 @@ const Work = () => {
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
-                      <WorkImage image={project.image} alt={project.title} />
+                      <WorkImage
+                        image={project.image}
+                        alt={project.title}
+                        link={project.link}
+                      />
                     </div>
                   </div>
                 </div>
